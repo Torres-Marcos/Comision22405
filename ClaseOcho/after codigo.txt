@@ -1,0 +1,72 @@
+/*class Usuario {
+
+    constructorUsuario (mail, contraseña) {
+        this.mail = mail;
+        this.contraseña = contraseña;
+    }
+}
+
+class Producto {
+    constructor (nombre, precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+    } 
+}
+
+const usuarioRegistrado = new Usuario ("marcos", "torres")
+
+let listaProductos;
+
+if(localStorage.getItem("lista") == null) {
+    listaProductos = []
+    } else {
+        listaProductos = JSON.parse(localStorage.getItem("lista"))
+        }
+
+
+//const listaProductos = []
+
+const crearProducto = (nombre, precio) => {
+    const producto = new Producto(nombre, precio)
+    return producto
+}
+
+
+const ingresoCorrectamente = () => {
+
+let bucle = true
+
+
+while (bucle) {
+    const mail = prompt("Ingresa Mail");
+    const contraseña = prompt("Ingresa contraseña")
+
+    if (mail === usuarioRegistrado.mail && contraseña === usuarioRegistrado.contraseña) {
+        bucle = false
+
+        let ciclo = true;
+
+        while (ciclo) {
+            const nombre = prompt("Ingresa nombre del producto");
+            const precio = Number(prompt("Ingresa Precio"));
+            
+
+            listaProductos.push( crearProducto(nombre,precio))
+
+            localStorage.setItem("lista", JSON.stringify(listaProductos))
+
+            ciclo = confirm ("Desea agregar otro mas?")
+         
+        }
+
+        //bucle = false
+        break;
+
+    } else {
+        alert("usuario incorrecto")
+    }
+}
+
+}
+
+ingresoCorrectamente ()*/
