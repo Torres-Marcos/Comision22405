@@ -23,7 +23,7 @@ function validar () {
         document.getElementById("ingresar").style.color = "black"
         document.getElementById("ingresar").style.fontSize = "45px";
 
-        } else {
+        } else if (user  != arrayUsuario.mail && pass  != arrayUsuario.contraseña){
            document.getElementById("ingresar").textContent = "La Contraseña/mail ingresado es incorrecto" 
            document.getElementById("ingresar").style.color = "red"
            document.getElementById("ingresar").style.fontSize = "35px";
