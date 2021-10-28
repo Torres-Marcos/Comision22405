@@ -38,8 +38,8 @@ function Ocultar (){
     //input2.onkeydown = () => {console.log("keyDown")};
 
     
-    
-    function validar () { 
+
+   function validar () { 
         if (user  === "marcos" && pass  === "torres") {
             
             document.getElementById("ingresar").textContent = "Usted ha ingresado correctamente"
@@ -59,18 +59,8 @@ function Ocultar (){
                 validar()
             } 
 
-
            
-            const node = document.getElementById("contraseña");
-node.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        // Do more work
-    }
-});
-         
 
-// usar telca ENTER
 
 
 
