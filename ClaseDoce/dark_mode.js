@@ -1,7 +1,8 @@
-$(".checkbox").click(function(){
-    if($("input.checkbox").is(":checked")){
-        $(".theme").attr("href","light.css");
+$('#check').click(function(){
+    if($('input#check').is(':checked')){
+        $('#theme').attr('href','estilos/dark.css');
     } else {
-        $(".theme").attr("href","dark.css");
+        $('#theme').attr('href','estilos/light.css');
     }
 });
+
